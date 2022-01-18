@@ -1,0 +1,16 @@
+{
+  "name": "Start on Heroku: Python",
+  "description": "MovieKhor",
+  "image": "/favicon.ico",
+  "repository": "https://github.com/sourav-js/movieDownloader.git",
+  "keywords": ["python" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "python movie.py test"
+      }
+    }
+  }
+}
+
