@@ -28,4 +28,7 @@ if __name__ == "__main__":
     #from django.core.management import execute_from_command_line
 
     #execute_from_command_line(sys.argv)
-    app.run(host='0.0.0.0',port=os.environ.get('PORT', 5001))
+    #app.run(host='0.0.0.0',port=os.environ.get('PORT', 5001))
+    #execute_from_command_line(app)
+    from os import environ
+    app.run(debug=True, port=environ.get("PORT", 5000))
