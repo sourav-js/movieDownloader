@@ -23,13 +23,13 @@ def finding():
      return render_template("finder.html",lens=len(alldata),items=alldata) 
 
 if __name__ == "__main__":
-    
+    app.run(environ.get('PORT'))
     #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
 
     #from django.core.management import execute_from_command_line
 
     #execute_from_command_line(sys.argv)
-    app.run(host='0.0.0.0',port=os.environ.get('PORT', 5001))
+    #app.run(host='0.0.0.0',port=os.environ.get('PORT', 5001))
     #execute_from_command_line(app)
     #from os import environ
     #app.run(debug=False, port=environ.get("PORT", 5000), processes=2)
