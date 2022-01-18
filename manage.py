@@ -31,4 +31,4 @@ if __name__ == "__main__":
     #app.run(host='0.0.0.0',port=os.environ.get('PORT', 5001))
     #execute_from_command_line(app)
     from os import environ
-    app.run(debug=True, port=environ.get("PORT", 5000))
+    app.run(debug=False, port=environ.get("PORT", 5000), processes=2)
